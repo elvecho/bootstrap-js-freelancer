@@ -38,7 +38,8 @@ console.log(prezzoAnalisi);
     }
      if(trovato == true){
         console.log("si");
-        let prezzoTotale= prezzo/4;
+        let sconto= prezzo*0.25;
+        let prezzoTotale= prezzo - sconto;
         console.log(prezzoTotale);
         document.getElementById("demo").innerHTML ="il tuo prezzo finale è di: " + prezzoTotale;
      }else{
