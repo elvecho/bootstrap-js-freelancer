@@ -114,22 +114,22 @@
             </div>
             <div class="col">
                 <label for="inputhoursrequested" class="form-label">hours requested</label>
-              <input type="text" class="form-control" placeholder="hours requested" aria-label="hours requested">
+              <input type="text" class="form-control" placeholder="hours requested" aria-label="hours requested" id="hoursrequested">
             </div>
         </div>
         <div class="row">
           <div class="col">
             <label for="inputState" class="form-label">State</label>
-            <select id="inputState" class="form-select">
-              <option selected>Backed Development</option>
-              <option>Frontend Development</option>
-              <option>Project Analisys</option>
-              <option>...</option>
-            </select>
+            <select id="typeofwork" class="form-select" aria-label="Default select example">
+                
+                <option value="1">backendDevelopment</option>
+                <option value="2">frontendDevelopment</option>
+                <option value="3">projectAnalisys</option>
+              </select>
           </div>
           <div class="col">
             <label for="inputdiscountcode" class="form-label">discount code</label>
-          <input type="text" class="form-control" placeholder="discount code" aria-label="discount code">
+          <input type="text" class="form-control" placeholder="discount code" aria-label="discount code" id="dicountCode">
         </div>
         <div class="row-fluid">
             <div class="mb-3">
@@ -140,9 +140,10 @@
         </div>
     <div class="row"></div>
         <div class="col text-center">
-            <button class="btn btn-warning" type="send">Send</button>
+            <button type="button" onclick="prezzoTot()" class="btn btn-warning" type="send">Send</button>
           </div>
     </div>
+    <div><h3 id="demo"></h3></div>
         </div>
 
 
