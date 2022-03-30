@@ -46,6 +46,7 @@ console.log(prezzoAnalisi);
         document.getElementById("demo").innerHTML ="il tuo prezzo finale è di: " + prezzoTotale;
      }else{
         console.log("no");
+        alert("il codice sconto non è valido");
         console.log(prezzo);
         
         document.getElementById("demo").innerHTML = "il tuo prezzo finale è di: " + prezzo + "\u20AC";
