@@ -29,6 +29,7 @@ console.log(prezzoAnalisi);
  let codice = document.getElementById("dicountCode").value
  console.log(codice);
  let trovato=false;
+ 
  for(let i=0; i < codiciPromozionali.length; i++){
     
      if(codice == codiciPromozionali[i]){
@@ -40,11 +41,13 @@ console.log(prezzoAnalisi);
         console.log("si");
         let sconto= prezzo*0.25;
         let prezzoTotale= prezzo - sconto;
+    prezzoTotale = prezzoTotale.toFixed;
         console.log(prezzoTotale);
         document.getElementById("demo").innerHTML ="il tuo prezzo finale è di: " + prezzoTotale;
      }else{
         console.log("no");
         console.log(prezzo);
+        
         document.getElementById("demo").innerHTML = "il tuo prezzo finale è di: " + prezzo + "\u20AC";
      }
         
