@@ -45,7 +45,7 @@ console.log(prezzoAnalisi);
      }else{
         console.log("no");
         console.log(prezzo);
-        document.getElementById("demo").innerHTML = "il tuo prezzo finale è di: " + prezzo;
+        document.getElementById("demo").innerHTML = "il tuo prezzo finale è di: " + prezzo + "\u20AC";
      }
         
      
